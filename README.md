@@ -1,0 +1,1 @@
+# cropAI-smart-farmer-support-system
