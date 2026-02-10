@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cropAI - Register</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h2>🌱 Create Account</h2>
+
+  <input type="text" id="newUser" placeholder="Username" required><br><br>
+  <input type="password" id="newPass" placeholder="Password" required><br><br>
+
+  <button onclick="register()">Register</button>
+  <p id="msg"></p>
+
+  <script>
+    function register() {
+      const user = document.getElementById("newUser").value.trim();
+      const pass = document.getElementById("newPass").value.trim();
+
+      if (user === "" || pass === "") {
+        document.getElementById("msg").innerText = "All fields are required!";
+        return;
+      }
+
+      localStorage.setItem("username", user);
+      localStorage.setItem("password", pass);
+
+      document.getElementById("msg").innerText =
+        "Account created successfully! You can login now.";
+    }
+  </script>
+</body>
+</html>

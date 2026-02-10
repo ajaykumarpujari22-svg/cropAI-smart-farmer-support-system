@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cropAI - Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>🌾 cropAI Login</h2>
+      <input type="text" id="username" placeholder="Enter Username" required>
+      <input type="password" id="password" placeholder="Enter Password" required>
+      <button onclick="login()">Login</button>
+      <p id="error"></p>
+
+      <div class="extra-links">
+        <a href="register.html">Create an account</a> |
+        <a href="forgot.html">Forgot password?</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value.trim();
+      const pass = document.getElementById("password").value.trim();
+
+      // ✅ Check stored user data in localStorage
+      const storedUser = localStorage.getItem("username");
+      const storedPass = localStorage.getItem("password");
+
+      // Default fallback account
+      const defaultUser = "AJAYKUMAR";
+      const defaultPass = "A";
+
+      if ((user === storedUser && pass === storedPass) || (user === defaultUser && pass === defaultPass)) {
+        localStorage.setItem("loggedIn", "true");
+        window.location.href = "index.html";
+      } else {
+        document.getElementById("error").innerText = "Invalid username or password!";
+      }
+    }
+  </script>
+</body>
+</html>
+<div class="extra-links">
+  <a href="register.html" target="_blank">Create an account</a> |
+  <a href="forgot.html" target="_blank">Forgot password?</a>
+</div>
+

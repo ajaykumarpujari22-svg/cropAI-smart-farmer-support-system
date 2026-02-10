@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout | Raithu Seva</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="logout-container">
+        <h2>Logging you out...</h2>
+    </div>
+
+    <script>
+        // Clear any stored login/session data
+        localStorage.removeItem("isLoggedIn");
+        sessionStorage.clear();
+
+        // Redirect to login page (or home)
+        setTimeout(() => {
+            window.location.href = "login.html"; // change to your login page
+        }, 1500);
+    </script>
+</body>
+</html>

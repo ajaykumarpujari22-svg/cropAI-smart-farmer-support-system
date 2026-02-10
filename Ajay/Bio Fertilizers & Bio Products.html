@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Helper</title>
+    <link rel="stylesheet" href="Bio Fertilizers & Bio Products.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+
+            <!-- Fertilizers -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Fertilizers</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <img src="images/urea.jpg" alt="Urea">
+                        <span>Urea</span>
+                    </li>
+                    <li>
+                        <img src="images/npk.jpg" alt="NPK">
+                        <span>NPK</span>
+                    </li>
+                    <li>
+                        <img src="images/compost.jpg" alt="Compost">
+                        <span>Compost</span>
+                    </li>
+                    <li>
+                        <img src="images/dap.jpg" alt="DAP">
+                        <span>DAP</span>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Bio Fertilizers -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Bio Fertilizers</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <img src="images/rhizobium.jpg" alt="Rhizobium">
+                        <span>Rhizobium</span>
+                    </li>
+                    <li>
+                        <img src="images/azotobacter.jpg" alt="Azotobacter">
+                        <span>Azotobacter</span>
+                    </li>
+                    <li>
+                        <img src="images/mycorrhiza.jpg" alt="Mycorrhiza">
+                        <span>Mycorrhiza</span>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Bio Products -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Bio Products</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <img src="images/neem_extract.jpg" alt="Neem Extract">
+                        <span>Neem Extract</span>
+                    </li>
+                    <li>
+                        <img src="images/vermiwash.jpg" alt="Vermiwash">
+                        <span>Vermiwash</span>
+                    </li>
+                    <li>
+                        <img src="images/cow_dung_liquid.jpg" alt="Cow Dung Liquid">
+                        <span>Cow Dung Liquid</span>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- JS for dropdown click functionality -->
+    <script>
+        const dropdowns = document.querySelectorAll('.dropdown');
+
+        dropdowns.forEach(dropdown => {
+            const btn = dropdown.querySelector('.dropbtn');
+
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Close other dropdowns
+                dropdowns.forEach(d => {
+                    if (d !== dropdown) d.classList.remove('active');
+                });
+
+                dropdown.classList.toggle('active');
+            });
+        });
+
+        // Close dropdown if clicked outside
+        window.addEventListener('click', function(e) {
+            if (![...dropdowns].some(d => d.contains(e.target))) {
+                dropdowns.forEach(d => d.classList.remove('active'));
+            }
+        });
+    </script>
+</body>
+</html>

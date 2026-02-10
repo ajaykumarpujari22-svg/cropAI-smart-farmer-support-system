@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Helper</title>
+    <link rel="stylesheet" href="Fertilizers.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Fertilizers</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/WN/LY/OL/157840235/iffco-urea-50kg.png" alt="Urea">
+                        <span>Urea</span>
+                    </li>
+                    <li>
+                        <img src="images/npk.jpg" alt="NPK">
+                        <span>NPK</span>
+                    </li>
+                    <li>
+                        <img src="images/compost.jpg" alt="Compost">
+                        <span>Compost</span>
+                    </li>
+                    <li>
+                        <img src="images/dap.jpg" alt="DAP">
+                        <span>DAP</span>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- JS for click functionality -->
+    <script>
+        const dropdown = document.querySelector('.dropdown');
+        const dropbtn = document.querySelector('.dropbtn');
+
+        dropbtn.addEventListener('click', function(e) {
+            e.preventDefault(); // prevent page jump
+            dropdown.classList.toggle('active');
+        });
+
+        // Close dropdown if clicked outside
+        window.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

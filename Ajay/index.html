@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Helpful resources and guidance for farmers to improve crop yield, market insights, and sustainable farming practices.">
+    <title>Farmer’s World | cropAI</title>
+    <script src="https://kit.fontawesome.com/7b188a37d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+
+    <div class="scrolling-text">
+        <p>🌱 Hey this is AjayKumarPujari ! Welcome to cropAI ! | thank you for visiting our website ! | I Will
+            give you a best path to the innovative farming !
+            our main branch in mudigubba,Sri Satya Sai District, Andhra Pradesh ! please visit our social media
+            platforms for new updates ! Thankyou..........</p>
+    </div>
+
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="assects/farmer-removebg-preview (2).png" height="60" width="90" alt="Farmer Logo">
+        </div>
+        <div class="menubar">
+            <a href="index.html">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Services <i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="soil.html">Soil Analysis</a>
+                    <a href="seeds.html">High-Quality Seeds</a>
+                    <a href="fertilizers.html">Fertilizers & Pesticides</a>
+                    <a href="market.html">Market Insights</a>
+                    <a href="consulting.html">Consulting</a>
+                </div>
+            </div>
+
+            <a href="About us.html">About Us</a>
+            <a href="Customer Support.html">Customer Support</a>
+            <a href="logout.html">Logout</a>
+        </div>
+
+    </div>
+
+
+    <section class="banner-slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="https://wallpaperaccess.com/full/1605776.jpg" height="500">
+                <div class="caption">High-Quality Seeds for Your Farm</div>
+            </div>
+            <div class="slide active">
+                <img src="https://terra-droneagri.com/wp-content/uploads/2024/03/fertilizer-1024x578.jpeg" height="500">
+                <div class="caption">High-Quality Seeds for Your Farm</div>
+            </div>
+            <div class="slide active">
+                <img src="https://img.shoplineapp.com/media/image_clips/6220b1bb927dd50029c88d77/original.jpeg?1646309818"
+                    height="500">
+                <div class="caption">High-Quality Seeds for Your Farm</div>
+            </div>
+            <div class="slide">
+                <img src="https://wallpaperaccess.com/full/4293166.jpg" height="500">
+                <div class="caption">Sustainable Farming Solutions</div>
+            </div>
+            <div class="slide">
+                <img src="https://kohsantepheapdaily.com.kh/wp-content/uploads/2021/11/a8432a5f31d8815dd6142b454035f722-96-scaled.jpg"
+                    height="500">
+                <div class="caption">Expert Tips & Market Insights</div>
+            </div>
+            <div class="slide">
+                <img src="https://desikaanoon.in/wp-content/uploads/2020/06/photo-1559884743-74a57598c6c7-1024x679.jpeg"
+                    height="500">
+                <div class="caption">Sustainable Farming Solutions</div>
+            </div>
+        </div>
+    </section>
+    <!-- Farmer Dashboard -->
+    <section class="farmer-dashboard">
+
+
+        <!-- Weather Card -->
+        <div class="dashboard-card weather-card">
+            <h3>Actionable Weather Forecast</h3>
+            <div class="controls">
+                <input type="text" id="city-input" placeholder="Enter city (e.g., mudigubba)">
+                <button id="get-weather-btn">Get Weather</button>
+            </div>
+            <div id="weather-results-container">
+                <p>Enter a city to get your 5-day forecast.</p>
+            </div>
+        </div>
+
+        <!-- Mandi Prices Card -->
+        <div class="dashboard-card mandi-card">
+            <h3>Check Mandi Prices</h3>
+            <div class="controls">
+                <select id="mandi-select">
+                    <option value="">Select Mandi</option>
+                    <option value="Lasalgaon">Anantapur</option>
+                    <option value="Azadpur">kadiri</option>
+                    <option value="Nagpur">madanapalli</option>
+                    <option value="Bathalapalle">Bathalapalle</option>
+                    <option value="Chennekothapalle">Chennekothapalle</option>
+                    <option value="Dharmavaram">Dharmavaram</option>
+                    <option value="Kanaganapalle">Kanaganapalle</option>
+                    <option value="Mudigubba">Mudigubba</option>
+                    <option value="Ramagiri">Ramagiri</option>
+                    <option value="Tadimarri">Tadimarri</option>
+                    <option value="Amadagur">Amadagur</option>
+                    <option value="Gandlapenta">Gandlapenta</option>
+                    <option value="Kadiri">Kadiri</option>
+                    <option value="Nallacheruvu">Nallacheruvu</option>
+                    <option value="Nambulapulakunta">Nambulapulakunta</option>
+                    <option value="Talupula">Talupula</option>
+                    <option value="Tanakal">Tanakal</option>
+                    <option value="Agali">Agali</option>
+                    <option value="Amarapuram">Amarapuram</option>
+                    <option value="Chilamathur">Chilamathur</option>
+                    <option value="Gudibanda">Gudibanda</option>
+                    <option value="Hindupur">Hindupur</option>
+                    <option value="Lepakshi">Lepakshi</option>
+                    <option value="Madakasira">Madakasira</option>
+                    <option value="Parigi">Parigi</option>
+                    <option value="Penukonda">Penukonda</option>
+                    <option value="Roddam">Roddam</option>
+                    <option value="Rolla">Rolla</option>
+                    <option value="Somandepalle">Somandepalle</option>
+                    <option value="Bukkapatnam">Bukkapatnam</option>
+                    <option value="Gorantla">Gorantla</option>
+                    <option value="Kothacheruvu">Kothacheruvu</option>
+                    <option value="Nallamada">Nallamada</option>
+                    <option value="Obuladevaracheruvu">Obuladevaracheruvu</option>
+                    <option value="Puttaparthi">Puttaparthi</option>
+                </select>
+                <select id="crop-select">
+                    <option value="">Select Crop</option>
+                    <option value="Onion">Onion</option>
+                    <option value="Potato">Potato</option>
+                    <option value="Tomato">Tomato</option>
+                    <option value="banana">banana</option>
+                    <option value="Paddy">Paddy</option>
+                    <option value="Groundnut">Groundnut</option>
+                    <option value="Cotton">Cotton</option>
+                    <option value="Corn">Corn</option>
+                    <option value="Redgram">Redgram</option>
+                    <option value="Castor oil seed">Castor oil seed</option>
+                    <option value="Sugarcane">Sugarcane</option>
+                    <option value="Sunflower">Sunflower</option>
+                    <option value="Maize">Maize</option>
+                    <option value="Jowar">Jowar</option>
+                    <option value="Green gram">Green gram</option>
+                    <option value="Horse gram">Horse gram</option>
+                    <option value="Mango">Mango</option>
+                    <option value="Sweet Orange">Sweet Orange</option>
+                    <option value="Pomegranate">Pomegranate</option>
+                    <option value="Areca Nut">Areca Nut</option>
+                    <option value="Tomato">Tomato</option>
+                    <option value="Drumstick">Drumstick</option>
+                    <option value="Black berry">Black berry</option>
+                    <option value="Ragi (Finger Millet)">Ragi (Finger Millet)</option>
+                </select>
+                <button id="fetch-price-btn">Get Prices</button>
+            </div>
+            <div id="price-results-container">
+                <p>Select mandi & crop, then click "Get Prices"</p>
+            </div>
+        </div>
+    </section>
+    <section class="service-highlights">
+        <h2>Our Core Services</h2>
+        <div class="highlight-cards">
+            <div class="card">
+                <i class="fas fa-seedling fa-3x"></i>
+                <h3>Expert Guidance</h3>
+                <p>Get personalized tips on crop selection, soil health, pest control, and sustainable farming
+                    practices.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-cloud-sun-rain fa-3x"></i>
+                <h3>Weather & Crop Alerts</h3>
+                <p>Receive real-time alerts and crop-specific notifications to make informed decisions on your farm.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line fa-3x"></i>
+                <h3>Market Insights</h3>
+                <p>Stay updated with the latest crop prices, demand trends, and market opportunities to maximize your
+                    profit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2>Why Choose Raithu Seva?</h2>
+        <p>Raithu Seva is dedicated to empowering farmers with knowledge, modern techniques, and real-time data.
+            From soil management to crop marketing, our platform ensures you make informed decisions that boost
+            productivity and sustainability.</p>
+        <p>Join our community and connect with experts, fellow farmers, and innovative tools designed to help your farm
+            grow efficiently.</p>
+    </section>
+    <section class="cta-section">
+        <h2>Join Our Farming Community Today!</h2>
+        <p>Sign up to receive expert advice, alerts, and resources directly to your inbox. Let’s grow smarter together!
+        </p>
+        <a href="signup.html" class="cta-button">Get Started</a>
+    </section>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/Ajay Kumar Pujari" target="_blank" class="facebook"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/yourprofile" target="_blank" class="twitter"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/a_j_a_y_k_u_m_a_r_46_" target="_blank" class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/Pujari Ajaykumar" target="_blank" class="linkedin"><i
+                    class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p> @cropAI Developed by AjayKumarPujari</p>
+    </footer>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
